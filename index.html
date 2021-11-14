@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>eCommerce site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <!-- Customize styles -->
+    <link href="assets/css/style.css" rel="stylesheet"/>
+    <!-- font awesome styles -->
+	<link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+  </head>
+
+<body>
+<!-- 
+	Upper Header Section 
+-->
+	<div class="navbar navbar-fixed-top">
+		<div class="topNav">
+			<div class="container">
+				<div class="alignR">
+					<div class="pull-left socialNw">
+						<a href="#"><span class="icon-twitter"></span></a>
+						<a href="#"><span class="icon-facebook"></span></a>
+						<a href="#"><span class="icon-youtube"></span></a>
+						<a href="#"><span class="icon-tumblr"></span></a>
+					</div>
+
+					<a class="active" href="index.html"> <span class="icon-home"></span> Home</a> 
+					<a href="#"><span class="icon-lock"></span> Login </a>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!--
+Lower Header Section 
+-->
+<div class="container">
+		<header id="header">
+			<div class="row">
+				<div class="span14">
+					<h1>
+						<a class="logo" href="index.html"><span>foody</span> 
+						<img src="assets/img/logo.png" alt="Grocery Shop">
+						</a>
+					</h1>
+				</div>
+				
+				<div class="span14">
+					<div class="cart">
+					<span class="icon-heart"></span>
+					<span class="icon-shopping-cart"></span> 
+					
+					<span class="cart-price">item: <span>$75.00</span></span>
+					</div>
+				</div>
+
+				<div class="span14">
+					<div class="phone">
+					<div class="phone-icon">
+						<span class="icon-phone"></span>
+					</div>
+					<div class="phone-text">
+						<h5>+9412345678</h5>
+						<span>support 24/7 time</span>
+					</div>
+				</div>
+			</div>
+			</div>
+		</header>
+
+<!--
+Navigation Bar Section 
+-->
+	<div class="navbar">
+		<div class="navbar-inner">
+			<div class="container">  				
+				<ul class="nav">
+					<li class="active"><a href="index.html">Home</a></li>
+					<li class="#"><a href="#">Shop</a></li>
+					<li class="#"><a href="#">Pages</a></li>
+					<li class="#"><a href="#">Blog</a></li>
+					<li class="#"><a href="#">Contact</a></li>
+				</ul>
+				
+				<div class="searchInputWrapper">
+					<input class="searchInput" type="text" placeholder='Search'>
+					<span class="searchInputIcon icon-search"></span>
+					</input>
+				</div>				
+			</div>
+		</div>
+	</div>
+
+<!-- 
+Body Section 
+-->
+	<div class="row">
+		<div id="sidebar" class="span3">
+			<div class="well well-small">
+				<ul class="nav nav-list">
+					<h3>Categories</h3><hr>
+
+					<li><a href="#">
+						<span class="icon-chevron-right"></span>All</a></li>
+					<li><a href="#">
+						<span class="icon-chevron-right"></span>Organic Vegetables</a></li>
+					<li><a href="#">
+						<span class="icon-chevron-right"></span>Organic Fruits</a></li>
+					<li><a href="#">
+						<span class="icon-chevron-right"></span>Organic Green Leaves</a></li>
+					<li><a href="#">
+						<span class="icon-chevron-right"></span>Healthy Food Corner</a></li>
+					<li><a href="#">
+						<span class="icon-chevron-right"></span>Drink foods</a></li>
+					<li><a href="#">
+						<span class="icon-chevron-right"></span>Herbal Cosmetics</a></li>
+					<li><a href="#">
+						<span class="icon-chevron-right"></span>Natural/Traditional Rice</a></li>
+					<li><a href="#">
+						<span class="icon-chevron-right"></span>Fastfood</a></li>
+					<li><a href="#">
+						<span class="icon-chevron-right"></span>Other Organic Products</a></li>
+						
+				</ul>
+			</div>
+		</div>
+
+	<div class="span9">
+		<div class="well">
+			<div class="item">
+				<img src="assets/img/banner.jpg" alt="banner">
+
+				<span class="intro">
+					<h2>Fresh Fruits</h2><br>
+					<h1>100% Organic<br><br>Foods</h1><br>
+					<button>SHOP NOW</button>
+				</span>
+			</div>		  
+		</div>
+	</div>
+
+<!--
+New Products
+-->
+	<div class="span10">
+		<div class="well well-small">
+			<h3> New Products  </h3>
+			<hr class="soften"/>
+
+			<div class="row-fluid">
+				<ul class="thumbnails">
+					<li class="span3">
+					<div class="thumbnail" id="Vegetables" onclick="popView(this.id)">
+						<img src="assets/img/new/vegetables.jpg" alt="Vegetables">
+						<h3 class="thumbnailBtn" id="name">Vegetables</h3>
+					</div>
+					</li>
+
+					<li class="span3">
+						<div class="thumbnail" id="Fruits" onclick="popView(this.id)">
+							<img src="assets/img/new/fruits.png" alt="Fruits">
+							<h3 class="thumbnailBtn"  id="name">Fruits</h3>
+						</div>
+					</li>
+					
+					<li class="span3">
+						<div class="thumbnail" id="Fastfood" onclick="popView(this.id)">
+							<img src="assets/img/new/fastfood.png" alt="Fastfood">
+							<h3 class="thumbnailBtn">Fastfood</h3>
+						</div>
+					</li>
+					
+					<li class="span3">
+						<div class="thumbnail" id="Drinks" onclick="popView(this.id)">
+							<img src="assets/img/new/drinks.png" alt="Drinks">
+							<h3 class="thumbnailBtn">Drinks</h3>
+						</div>
+					</li>
+				</ul>
+			</div>	
+		</div>
+
+<!--
+Featured Products
+-->
+	<div class="well well-small">
+		<h3> Featured Products  </h3>
+		<hr class="soften"/>
+
+		<div class="row-fluid">
+			<ul class="thumbnails">
+
+				<li class="span4">
+					<div class="thumbnail" id="Orange" onclick="popView(this.id)">	
+						<img src="assets/img/featured/feature-1.jpg" alt="Orange">
+						<div class="caption">
+							<h5>Orange</h5>
+							<h4>
+							<a class="shopBtn" title="add to cart">
+								<span class="icon-plus"></span></a>
+							<span class="pull-right">$2.00</span></a>
+							</h4>
+						</div>
+					</div>
+				</li>
+
+				<li class="span4">
+					<div class="thumbnail" id="Banana" onclick="popView(this.id)">
+						<img src="assets/img/featured/feature-2.jpg" alt="Banana">
+						<div class="caption">
+							<h5>Banana</h5>
+							<h4>
+								<a class="shopBtn" title="add to cart">
+									<span class="icon-plus"></span></a>
+								<span class="pull-right">$1.00</span>
+							</h4>
+						</div>
+					</div>
+				</li>
+
+				<li class="span4">
+					<div class="thumbnail" id="Apple" onclick="popView(this.id)">
+						<img src="assets/img/featured/feature-3.jpg" alt="Apple"/>
+						<div class="caption">
+							<h5>Apple</h5>
+							<h4>
+								<a class="shopBtn" title="add to cart">
+									<span class="icon-plus"></span></a>
+								<span class="pull-right">$5.00</span>
+							</h4>
+						</div>
+					</div>
+				</li>
+			</ul>
+
+			<div class="row-fluid">
+				<ul class="thumbnails">
+
+					<li class="span4">
+						<div class="thumbnail" id="Watermelon" onclick="popView(this.id)">
+							<img src="assets/img/featured/feature-4.jpg" alt="Watermelon"/>
+							<div class="caption">
+								<h5>Watermelon</h5>
+								<h4>
+									<a class="shopBtn" title="add to cart">
+										<span class="icon-plus"></span></a>
+									<span class="pull-right">$2.00</span>
+								</h4>
+							</div>
+						</div>
+					</li>
+
+					<li class="span4">
+						<div class="thumbnail" id="Tropicana Drink" onclick="popView(this.id)">
+							<img src="assets/img/featured/feature-5.jpg" alt="Tropicana Drink"/>
+							<div class="caption">
+								<h5>Tropicana Drink</h5>
+								<h4>
+									<a class="shopBtn" title="add to cart">
+										<span class="icon-plus"></span></a>
+									<span class="pull-right">$5.00</span>
+								</h4>
+							</div>
+						</div>
+					</li>
+
+					<li class="span4">
+						<div class="thumbnail" id="Burger" onclick="popView(this.id)">
+							<img src="assets/img/featured/feature-6.jpg" alt="Burger"/>
+							<div class="caption">
+								<h5>Burger</h5>
+								<h4>
+									<a class="shopBtn" title="add to cart">
+										<span class="icon-plus"></span></a>
+									<span class="pull-right">$10.00</span>
+								</h4>
+							</div>
+						</div>
+					</li>
+			  	</ul>
+			</div>
+		</div>
+	</div>
+	</div>
+</div>
+
+<!--
+Custom Alert View
+-->
+	<div class="modal">
+		<div class="modal-content">
+			<span class="close-button">×</span>
+			<h1 id="chVal">Item Name</h1>
+		</div>
+	</div>
+	
+<!--
+Footer
+-->
+<footer class="footer">
+	<div class="row-fluid">
+
+		<div class="span6">
+			<img src="assets/img/logo.png"><br/><br/>
+			<a href="#"><h4 class="ft">Address: No. 007, milky way, New York</h4></a>
+			<a href="#"><h4 class="ft">Phone: 006412345678</h4></a>
+			<a href="#"><h4 class="ft">Email: admin@foody.com</h4></a>
+		</div>
+
+		<div class="span15">
+			<h4>Useful Links</h4>
+			<a href="#"><h4 class="ft">About Us</h4></a>
+			<a href="#"><h4 class="ft">About Our Shop</h4></a>
+			<a href="#"><h4 class="ft">Secure Shopping</h4></a>
+			<a href="#"><h4 class="ft">Delivery information</h4</a>
+			<a href="#"><h4 class="ft">Privacy Policy</h4></a>
+		</div>
+	 
+		<div class="span15">
+			<h4>Sitemaps</h4>
+			<a href="index.html"><h4 class="ft">Home</h4></a>
+			<a href="#"><h4 class="ft">Shop</h4></a>
+			<a href="#"><h4 class="ft">Pages</h4></a>
+			<a href="#"><h4 class="ft">Blog</h4</a>
+			<a href="#"><h4 class="ft">Contact</h4></a>
+		</div>
+
+	 </div>
+</footer>
+</div>
+
+<!--
+Copyright
+-->
+
+<div class="copyright">
+	<div class="container">
+		<div class="pull-center">
+			<span>Copyright &copy; 2021<br> foody products pvt. ltd.</span>
+		</div>
+	</div>
+</div>
+
+<script src="assets/js/script.js"></script>
+
+</body>
+</html>
